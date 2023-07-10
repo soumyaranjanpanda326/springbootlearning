@@ -1,0 +1,9 @@
+package com.jpa.test.entity;
+
+import jakarta.persistence.Entity;
+
+@Entity
+public class User {
+	
+
+}
