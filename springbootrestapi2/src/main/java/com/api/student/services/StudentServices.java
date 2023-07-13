@@ -29,7 +29,14 @@ public class StudentServices {
 	
 	//to get students by roll number
 	public Students getStudentByRoll(int roll) {
-		return students.stream().filter(e->e.getRoll()==roll).findFirst().get();
+		Students s = null;
+		try {
+			s = students.stream().filter(e->e.getRoll()==roll).findFirst().get();
+		}catch (Exception e) {
+			// TODO: handle exception
+			e.printStackTrace();
+		}
+		return s;
 	}
 	
 	//to add a student
