@@ -1,4 +1,0 @@
-spring.mvc.view.prefix=webapp/views/
-spring.mvc.view.suffix=.jsp
-server.port=9192
-#server.servlet.context-path=myApp
